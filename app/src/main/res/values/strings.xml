@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Music App</string>
     <string name="albumimage">MusicAlbumImage</string>
+    <string name="song_album_image">song_album_image</string>
+    <string name="button_to_pause_song">button to pause song</string>
+    <string name="button_to_play_song">button to play song</string>
+    <string name="textview">TextView</string>
 </resources>
