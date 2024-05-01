@@ -65,6 +65,7 @@
 
             <ImageButton
                 android:id="@+id/btn_addto_favourite"
+                android:contentDescription="to add song in favourite list"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -73,6 +74,7 @@
 
             <ImageButton
                 android:id="@+id/btn_music_details"
+                android:contentDescription="to show song details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
