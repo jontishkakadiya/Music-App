@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity(), MyRecyclerAdapter.OnItemClickListener 
             override fun onResponse(call: Call<MyData?>, response: Response<MyData?>) {
 
                 val dataList = response.body()?.data!!
-                myAdapter = MyRecyclerAdapter(this@MainActivity, dataList)
+                myAdapter = MyRecyclerAdapter(dataList)
                 binding.recyclerView.adapter = myAdapter
                 binding.recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
                 myAdapter.setOnItemClickListener(this@MainActivity)

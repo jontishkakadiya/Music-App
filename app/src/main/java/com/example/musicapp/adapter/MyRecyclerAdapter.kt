@@ -1,6 +1,5 @@
 package com.example.musicapp.adapter
 
-import android.app.Activity
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -8,13 +7,13 @@ import com.example.musicapp.data.Data
 import com.example.musicapp.databinding.RecyclerviewRowBinding
 import com.squareup.picasso.Picasso
 
-class MyRecyclerAdapter(private val context: Activity, private val dataList: List<Data>) :
+class MyRecyclerAdapter(private val dataList: List<Data>) :
     RecyclerView.Adapter<MyRecyclerAdapter.MyViewHolder>() {
 
     class MyViewHolder(private val binding: RecyclerviewRowBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(data: Data, context: Activity) {
+        fun bind(data: Data) {
             binding.apply {
                 musicTitle.text = data.title
                 artistName.text = data.artist.name
@@ -43,7 +42,7 @@ class MyRecyclerAdapter(private val context: Activity, private val dataList: Lis
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentData = dataList[position]
-        holder.bind(currentData, context)
+        holder.bind(currentData)
         holder.itemView.setOnClickListener {
             listener?.onItemClick(currentData)
         }

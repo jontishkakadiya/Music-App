@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/Song_image"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:contentDescription="@string/song_album_image"
             android:scaleType="centerCrop"
             tools:srcCompat="@tools:sample/avatars" />
@@ -70,7 +70,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="#00000000"
                 android:contentDescription="@string/to_add_song_in_favourite_list"
-                app:srcCompat="@drawable/ic_launcher_foreground" />
+                app:srcCompat="@android:drawable/btn_star" />
 
             <ImageButton
                 android:id="@+id/btn_music_details"
