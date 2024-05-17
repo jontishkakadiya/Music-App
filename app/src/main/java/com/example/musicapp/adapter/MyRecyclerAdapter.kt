@@ -48,8 +48,9 @@ class MyRecyclerAdapter(private val dataList: List<Data>) :
         }
     }
 }
-//
-//
+
+
+
 //package com.example.musicapp.adapter
 //
 //import android.app.Activity
