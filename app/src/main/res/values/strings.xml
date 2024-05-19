@@ -8,4 +8,20 @@
     <string name="to_show_song_details">to show song details</string>
     <string name="to_add_song_in_favourite_list">to add song in favourite list</string>
     <string name="music_app">Music App</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="welcome_nto_the_world_of_music">Welcome\nto the World of Music</string>
+    <string name="by_jontish_kakadiya">By Jontish Kakadiya</string>
+    <string name="signin">SignIn</string>
+    <string name="signup">SignUp</string>
+    <string name="discover_your_sound_your_rhythm_your_world">Discover your sound, your rhythm, your world.</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="create_account">Create Account</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="full_name">Full Name</string>
+    <string name="let_s_get_nstarted">Let\'s get\nstarted!</string>
 </resources>

@@ -1,10 +1,9 @@
-package com.example.musicapp
+package com.example.musicapp.model
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
+import com.example.musicapp.SignUp.HomePage_Activity
 import com.example.musicapp.databinding.ActivitySplashBinding
 
 
@@ -25,7 +24,7 @@ class Splashactivity : AppCompatActivity() {
     private fun navigateToMainActivityAfterDelay() {
 
         binding.splashText.postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, HomePage_Activity::class.java))
             finish()
         }, 3000)
 

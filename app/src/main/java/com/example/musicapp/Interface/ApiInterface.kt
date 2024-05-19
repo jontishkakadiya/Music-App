@@ -1,4 +1,4 @@
-package com.example.musicapp
+package com.example.musicapp.Interface
 
 import com.example.musicapp.data.MyData
 import retrofit2.Call

@@ -60,7 +60,7 @@ class MyRecyclerAdapter(private val dataList: List<Data>) :
 //import android.view.ViewGroup
 //import androidx.core.net.toUri
 //import androidx.recyclerview.widget.RecyclerView
-//import com.example.musicapp.MusicPlayActivity
+//import com.example.musicapp.model.MusicPlayActivity
 //import com.example.musicapp.data.Data
 //import com.example.musicapp.databinding.RecyclerviewRowBinding
 //import com.squareup.picasso.Picasso

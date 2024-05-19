@@ -1,4 +1,4 @@
-package com.example.musicapp
+package com.example.musicapp.model
 
 import com.example.musicapp.adapter.MyRecyclerAdapter
 import android.content.Intent
@@ -8,6 +8,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.musicapp.Interface.ApiInterface
+import com.example.musicapp.R
 import com.example.musicapp.data.Data
 import com.example.musicapp.data.MyData
 import com.example.musicapp.databinding.ActivityMainBinding
@@ -89,7 +91,7 @@ class MainActivity : AppCompatActivity(), MyRecyclerAdapter.OnItemClickListener 
 //import retrofit2.converter.gson.GsonConverterFactory
 //
 //
-//class com.example.musicapp.MainActivity : AppCompatActivity() {
+//class com.example.musicapp.model.MainActivity : AppCompatActivity() {
 //    private  lateinit var binding: ActivityMainBinding
 //    lateinit var myRecyclerView : RecyclerView
 //    lateinit var myAdapter : com.example.musicapp.adapter.MyRecyclerAdapter
@@ -113,9 +115,9 @@ class MainActivity : AppCompatActivity(), MyRecyclerAdapter.OnItemClickListener 
 //            override fun onResponse(call: Call<MyData?>, response: Response<MyData?>) {
 //
 //                val dataList = response.body()?.data!!
-//                myAdapter = com.example.musicapp.adapter.MyRecyclerAdapter(this@com.example.musicapp.MainActivity, dataList)
+//                myAdapter = com.example.musicapp.adapter.MyRecyclerAdapter(this@com.example.musicapp.model.MainActivity, dataList)
 //                binding.recyclerView.adapter = myAdapter
-//                binding.recyclerView.layoutManager = LinearLayoutManager(this@com.example.musicapp.MainActivity)
+//                binding.recyclerView.layoutManager = LinearLayoutManager(this@com.example.musicapp.model.MainActivity)
 //                Log.d("On Success", "onResponse: " + response.body())
 //
 //            }
