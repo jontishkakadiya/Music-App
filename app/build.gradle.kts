@@ -60,4 +60,10 @@ dependencies {
     //Picasso for converting image link given into api
     implementation("com.squareup.picasso:picasso:2.8")
 
+    //Glide for converting image link given into api
+    implementation("com.github.bumptech.glide:glide:4.13.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.13.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
 }

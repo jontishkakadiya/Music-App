@@ -24,4 +24,12 @@
     <string name="phone_number">Phone Number</string>
     <string name="full_name">Full Name</string>
     <string name="let_s_get_nstarted">Let\'s get\nstarted!</string>
+    <string name="song_name">song name</string>
+    <string name="shows_album_of_currently_playing_song">shows album of currently playing song</string>
+    <string name="shows_logo_of_the_app">shows logo of the app</string>
+    <string name="shows_three_line_for_the_side_menu">shows three line for the side menu</string>
+    <string name="shows_arrow_to_navigate_the_song_playinh_activity">shows arrow to navigate the song playinh activity</string>
+    <string name="song_title">song title</string>
+    <string name="shows_album_of_the_song">shows album of the song</string>
+    <string name="artist_name">Artist Name</string>
 </resources>
