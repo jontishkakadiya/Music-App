@@ -32,4 +32,8 @@
     <string name="song_title">song title</string>
     <string name="shows_album_of_the_song">shows album of the song</string>
     <string name="artist_name">Artist Name</string>
+    <string name="add_to_favorite">Add To Favorite</string>
+    <string name="song_subtitle">Song subtitle</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="album_cover_of_the_playing_song">Album cover of the playing song</string>
 </resources>

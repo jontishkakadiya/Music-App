@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MusicApp"
         tools:targetApi="31">
         <activity
+            android:name=".PlayerActivity"
+            android:exported="false" />
+        <activity
             android:name=".SignUp.SignIn_Activity"
             android:exported="false" />
         <activity
@@ -24,7 +27,7 @@
             android:name=".SignUp.HomePage_Activity"
             android:exported="false" />
         <activity
-            android:name=".model.Splashactivity"
+            android:name=".Splashactivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,10 +36,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".model.MusicPlayActivity"
+            android:name=".MusicPlayActivity"
             android:exported="false" />
         <activity
-            android:name=".model.MainActivity"
+            android:name=".MainActivity"
             android:exported="true" />
     </application>
 

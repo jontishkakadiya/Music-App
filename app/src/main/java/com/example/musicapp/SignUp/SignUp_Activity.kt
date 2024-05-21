@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.musicapp.databinding.ActivitySignUpBinding
-import com.example.musicapp.model.MainActivity
+import com.example.musicapp.MainActivity
 
 class SignUp_Activity : AppCompatActivity() {
 

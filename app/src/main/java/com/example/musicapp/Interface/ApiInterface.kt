@@ -1,6 +1,6 @@
 package com.example.musicapp.Interface
 
-import com.example.musicapp.data.MyData
+import com.example.musicapp.model.MyData
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Headers

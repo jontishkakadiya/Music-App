@@ -1,4 +1,4 @@
-package com.example.musicapp.model
+package com.example.musicapp
 
 import android.media.MediaPlayer
 import android.os.Bundle

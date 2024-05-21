@@ -1,4 +1,4 @@
-package com.example.musicapp.model
+package com.example.musicapp
 
 import com.example.musicapp.adapter.MyRecyclerAdapter
 import android.content.Intent
@@ -7,12 +7,10 @@ import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.musicapp.Interface.ApiInterface
-import com.example.musicapp.R
-import com.example.musicapp.data.Data
-import com.example.musicapp.data.MyData
+import com.example.musicapp.model.Data
+import com.example.musicapp.model.MyData
 import com.example.musicapp.databinding.ActivityMainBinding
 import retrofit2.Call
 import retrofit2.Callback

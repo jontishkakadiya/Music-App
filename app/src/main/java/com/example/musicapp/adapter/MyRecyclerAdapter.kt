@@ -1,16 +1,13 @@
 package com.example.musicapp.adapter
 
 import android.view.LayoutInflater
-import android.view.RoundedCorner
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
-import com.example.musicapp.R
-import com.example.musicapp.data.Data
+import com.example.musicapp.model.Data
 import com.example.musicapp.databinding.RecyclerviewRowBinding
-import com.squareup.picasso.Picasso
 
 class MyRecyclerAdapter(private val dataList: List<Data>) :
     RecyclerView.Adapter<MyRecyclerAdapter.MyViewHolder>() {
@@ -27,7 +24,7 @@ class MyRecyclerAdapter(private val dataList: List<Data>) :
                     .load(data.album.cover)
                     .apply(RequestOptions().transform(RoundedCorners(32)))
                     .into(SongAlbum)
-               // Picasso.get().load(data.album.cover).into(SongAlbum)
+                // Picasso.get().load(data.album.cover).into(SongAlbum)
             }
         }
     }

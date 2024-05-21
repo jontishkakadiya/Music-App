@@ -9,7 +9,7 @@
     android:background="@drawable/gradiant_background"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".model.Splashactivity">
+    tools:context=".Splashactivity">
 
     <LinearLayout
         android:id="@+id/llsplash"
