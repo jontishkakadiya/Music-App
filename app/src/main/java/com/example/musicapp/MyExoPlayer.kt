@@ -1,19 +1,16 @@
-package com.example.musicplayer_app
+package com.example.musicapp
 
 import android.content.Context
-import android.util.Log
 import androidx.media3.common.MediaItem
-import androidx.media3.ui
 import androidx.media3.exoplayer.ExoPlayer
-import com.example.musicplayer_app.model.SongModel
-//import com.google.android.material.tabs.TabLayout.TabGravity
-//import com.google.firebase.firestore.FirebaseFirestore
+import com.example.musicapp.model.SongModel
 
 object MyExoPlayer {
 
     private var exoPlayer: ExoPlayer? = null
     private var currentsong: SongModel? = null
     val TAG="MyExoPlayer"
+
     fun getInstance(): ExoPlayer? {
         return exoPlayer
     }
@@ -29,7 +26,7 @@ object MyExoPlayer {
 
         if (currentsong != song) {
             currentsong = song
-            UpdateCount()
+           // UpdateCount()
             currentsong?.url?.apply {
                 val mediaItem = MediaItem.fromUri(this)
                 exoPlayer?.setMediaItem(mediaItem)

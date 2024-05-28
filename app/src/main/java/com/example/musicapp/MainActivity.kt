@@ -18,7 +18,6 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-
 class MainActivity : AppCompatActivity(), MyRecyclerAdapter.OnItemClickListener {
     private lateinit var binding: ActivityMainBinding
     private lateinit var myRecyclerView: RecyclerView
@@ -48,12 +47,10 @@ class MainActivity : AppCompatActivity(), MyRecyclerAdapter.OnItemClickListener 
                 binding.songsRecyclerView.adapter = myAdapter
                 binding.songsRecyclerView.layoutManager = GridLayoutManager(this@MainActivity, 2,)
                // binding.songs_recyclerView.adapter = myAdapter
-              //  binding.recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
+               //  binding.recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
                 myAdapter.setOnItemClickListener(this@MainActivity)
                 Log.d("On Success", "onResponse: " + response.body())
-
             }
-
             override fun onFailure(call: Call<MyData?>, response: Throwable) {
                 Log.d("On Failure", "onFailure: " + response.message)
             }
@@ -61,7 +58,7 @@ class MainActivity : AppCompatActivity(), MyRecyclerAdapter.OnItemClickListener 
     }
 
     override fun onItemClick(data: Data) {
-        val intent = Intent(this, MusicPlayActivity::class.java).apply {
+        val intent = Intent(this, PlayerActivity::class.java).apply {
             putExtra("albumCover", data.album.cover)
             putExtra("musicTitle", data.title)
             putExtra("artistName", data.artist.name)
