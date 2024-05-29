@@ -36,4 +36,10 @@
     <string name="song_subtitle">Song subtitle</string>
     <string name="now_playing">Now Playing</string>
     <string name="album_cover_of_the_playing_song">Album cover of the playing song</string>
+    <string name="logout">Logout</string>
+    <string name="favorite_songs">Favorite Songs</string>
+    <string name="user_profile">User Profile</string>
+    <string name="email">email</string>
+    <string name="your_playlist">Your Playlist</string>
+    <string name="imageview_that_shows_user_profile_image">imageview that shows user profile image</string>
 </resources>
