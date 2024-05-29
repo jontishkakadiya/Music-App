@@ -1,8 +1,5 @@
 package com.example.musicapp.model
 
-import android.os.Parcel
-import android.os.Parcelable
-
 data class Artist(
     val id: Int,
     val link: String?,

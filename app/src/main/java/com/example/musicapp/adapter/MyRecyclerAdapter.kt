@@ -9,7 +9,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.example.musicapp.databinding.RecyclerviewRowBinding
 import com.example.musicapp.model.Data
 
-class MyRecyclerAdapter(private val dataList: List<Data>) :
+class MyRecyclerAdapter(private var dataList: List<Data>) :
     RecyclerView.Adapter<MyRecyclerAdapter.MyViewHolder>() {
 
     class MyViewHolder(private val binding: RecyclerviewRowBinding) :
@@ -52,6 +52,11 @@ class MyRecyclerAdapter(private val dataList: List<Data>) :
         holder.itemView.setOnClickListener {
             listener?.onItemClick(currentData)
         }
+    }
+
+    fun updateData(newData: List<Data>) {
+        dataList = newData
+        notifyDataSetChanged()
     }
 }
 

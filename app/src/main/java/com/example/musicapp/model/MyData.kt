@@ -1,6 +1,5 @@
 package com.example.musicapp.model
 
-import com.example.musicapp.model.Data
 import java.util.ArrayList
 
 data class MyData(
