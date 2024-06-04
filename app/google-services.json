@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "440302071588",
+    "project_id": "mucicapp-b7dcf",
+    "storage_bucket": "mucicapp-b7dcf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440302071588:android:e899ad678b1dd66c638db1",
+        "android_client_info": {
+          "package_name": "com.example.musicapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPcz0sGr1AlsYKuXjl4fUNLEFNs6VaEqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
