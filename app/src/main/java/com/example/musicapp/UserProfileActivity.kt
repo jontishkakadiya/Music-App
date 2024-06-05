@@ -8,30 +8,31 @@ import android.graphics.Paint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.graphics.Path
+import android.util.Log
 import com.example.musicapp.SignUp.SignIn_Activity
 import com.example.musicapp.databinding.ActivityUserProfileBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
 
 
 var TAG="UserProfileActivity"
 class UserProfileActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityUserProfileBinding
-   // private lateinit var databaseReference: DatabaseReference
+    private lateinit var databaseReference: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivityUserProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
-       // var currentuser =FirebaseAuth.getInstance().currentUser
+        val currentuser = FirebaseAuth.getInstance().currentUser
+
+        currentuser?.let{user->
+            binding.userEmail.text=user.email
 
 
-
-//        currentuser?.let{user->
-//            binding.userEmail.text=user.email
-//
-//
-//        }
+        }
 
         binding.btnLogout.setOnClickListener {
             logout()
@@ -47,16 +48,16 @@ class UserProfileActivity : AppCompatActivity() {
 
 
 
-      //  val firstLetter = currentuser?.email?.takeIf { it.isNotBlank() }?.get(0)?.toString() ?: ""
-       // Log.d(TAG, "First letter of username: $firstLetter")
-     //   val bitmap = drawTextToBitmap(firstLetter)
-       // binding.userImg.setImageBitmap(bitmap)
+        val firstLetter = currentuser?.email?.takeIf { it.isNotBlank() }?.get(0)?.toString() ?: ""
+        Log.d(TAG, "First letter of username: $firstLetter")
+        val bitmap = drawTextToBitmap(firstLetter)
+        binding.userImg.setImageBitmap(bitmap)
     }
 
     fun logout()
     {
         MyExoPlayer.getInstance()?.release()
-       // FirebaseAuth.getInstance().signOut()
+        FirebaseAuth.getInstance().signOut()
         startActivity(Intent(this,SignIn_Activity::class.java))
         finish()
     }

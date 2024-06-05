@@ -17,6 +17,7 @@ import com.example.musicapp.SignUp.SignIn_Activity
 import com.example.musicapp.model.Data
 import com.example.musicapp.model.MyData
 import com.example.musicapp.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -76,7 +77,8 @@ class MainActivity : AppCompatActivity(), MyRecyclerAdapter.OnItemClickListener 
     }
 
     private fun logout() {
-        MyExoPlayer.release()
+        MyExoPlayer.getInstance()?.release()
+        FirebaseAuth.getInstance().signOut()
         startActivity(Intent(this, SignIn_Activity::class.java))
         finish()
     }
